@@ -1,11 +1,11 @@
-
+require('dotenv').config();
 const express = require('express')
 
 const server = express();
 
 server.use(express.json())
 
-const port = process.env.PORT  || 9000;
+const port = process.env.PORT;
 
 const initialUsers = [
     {username: "joe", password: "joe123"},
